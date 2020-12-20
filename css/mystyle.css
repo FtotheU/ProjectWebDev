@@ -1,0 +1,27 @@
+.navbar{
+    background-color: rgb(41, 145, 46);
+    height:10rem;
+}
+.navbar_text{
+    background-color: rgb(184, 95, 184);
+    height: 2rem;
+}
+.maejo_header{
+    height: 100px;
+    margin-left:3rem;
+}
+.maejo_text{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+.maejo_eng_text{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(66, 66, 66);
+    text-shadow: 2px 2px 4px rgb(243, 243, 243);
+}
+.header2{
+    background-color: whitesmoke;
+}
