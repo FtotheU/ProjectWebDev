@@ -1,27 +1,112 @@
-.navbar{
-    background-color: rgb(41, 145, 46);
-    height:10rem;
+.navbar {
+    background-color: rgb(16, 95, 16);
+    height: auto;
+    width: 100%;
 }
-.navbar_text{
-    background-color: rgb(184, 95, 184);
-    height: 2rem;
+
+.header {
+    background-color: rgb(16, 95, 16);
+    width: 100%;
+    height: auto;
+    color: white;
 }
-.maejo_header{
-    height: 100px;
-    margin-left:3rem;
+
+.logo {
+    height: 70px;
+    border-right: 2px solid white;
+    padding-right: 1rem;
 }
-.maejo_text{
-    font-size: 50px;
+
+.maejo_text {
+    font-size: 30px;
     font-weight: bold;
     color: white;
-    text-shadow: 2px 2px 4px black;
+    text-decoration: none;
 }
-.maejo_eng_text{
-    font-size: 40px;
+
+.header_link {
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.tabmini {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
     font-weight: bold;
-    color: rgb(66, 66, 66);
-    text-shadow: 2px 2px 4px rgb(243, 243, 243);
+    background-color: white;
 }
-.header2{
-    background-color: whitesmoke;
+
+.option_head {
+    font-size: 15px;
+    /* font-weight: bold; */
+    color: black;
+    text-decoration: none;
 }
+
+.second_head{
+    color: white;
+    font-size: 30px;
+}
+
+.second_head_background{
+    background-color: rgb(26, 170, 26);
+}
+
+.head1 {
+    color: green;
+    padding-left: 2rem;
+    font-size: 30px;
+    border-bottom: 2px green solid;
+}
+
+.padding2 {
+    padding-bottom: 2rem;
+}
+
+.footer_bg {
+    width: 100%;
+    background-color: black;
+    height: auto;
+    padding: 1rem;
+}
+
+.link {
+    color: wheat;
+    text-decoration: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.icon {
+    color: white;
+    height: 30px;
+    width: 30px;
+    margin-left: 1rem;
+}
+
+.foot_text {
+    color: white;
+    font-size: 16px;
+}
+
+.liab2 {
+    border-bottom: 3px brown solid;
+}
+
+.teab2 {
+
+    font-size: 25px;
+}
+
+.imab2 {
+    margin-bottom: 10rem;
+}
+
+.atext2 {
+    /* margin-top: 1.5rem; */
+    font-size: 20px;
+}
+
+@media screen and(min-width:200px) and (max-width:780px) {}

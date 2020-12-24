@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--คำอธิบาย  -->
+    <meta charset="UTF-8">
+    <!-- รูปแบบ  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ขนาด  -->
+    <title>มหาวิทยาลัยแม่โจ้</title>
+    <!-- link -->
+    <!-- css  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="/css/mystyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+        </script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/th/4/43/%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89_edit.png">
+</head>
+
+<body style="background-color: white;">
+    <header>
+        <section>
+            <nav class="navbar navbar-expand-lg header">
+                <div class="container">
+                    <a class="navbar-brand maejo_text" style="font-size: 30px; color: white;"
+                        href="http://127.0.0.1:5500/js/index.html">
+                        <img class="logo"
+                            src="https://upload.wikimedia.org/wikipedia/th/4/43/%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89_edit.png"
+                            alt="maejo">
+                        Maejo University</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link header_link" style="color: white;"
+                                href="http://127.0.0.1:5500/js/index.html">หน้าแรก</a>
+                            <a class="nav-link header_link" style="color: white;"
+                                href="http://127.0.0.1:5500/js/1.html">เกี่ยวกับมหาวิทยาลัย</a>
+                            <a class="nav-link header_link" style="color: white;"
+                                href="http://127.0.0.1:5500/js/2.html">หน่วยงาน</a>
+                            <a class="nav-link header_link active" style="color: white;"
+                                href="http://127.0.0.1:5500/js/3.html" aria-current="page">วิจัยและบริการวิชาการ</a>
+                            <a class="nav-link header_link" style="color: white;"
+                                href="http://127.0.0.1:5500/js/4.html#">รอบรั้วมหาวิทยาลัย</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <div class="container" style="margin-top: 1rem; height: 51rem;">
+        <div class="row" style="padding-top: 2rem;">
+            <div class="row head1" style="border-bottom: 2px solid green;">
+                <p>หน่วยงาน</p>
+            </div>
+        </div>
+        <div class="row" style="padding-top: 1rem;">
+            <div class="col-md-12">
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item tabmini" role="presentation">
+                        <a class="nav-link active" id="one-tab" data-bs-toggle="tab" href="#one" role="tab"
+                            aria-controls="one" aria-selected="true" style="color: rgb(212, 28, 28);">สำนักงานสภามหาวิทยาลัย</a>
+                    </li>
+                    <li class="nav-item tabmini" role="presentation">
+                        <a class="nav-link" id="two-tab" data-bs-toggle="tab" href="#two" role="tab"
+                            aria-controls="two" aria-selected="false" style="color: rgb(247, 175, 41);">สำนักงานมหาวิทยาลัย</a>
+                    </li>
+                    <li class="nav-item tabmini" role="presentation">
+                        <a class="nav-link" id="three-tab" data-bs-toggle="tab" href="#three" role="tab"
+                            aria-controls="three" aria-selected="false" style="color: rgb(235, 211, 0);">คณะ</a>
+                    </li>
+                    <li class="nav-item tabmini" role="presentation">
+                        <a class="nav-link" id="four-tab" data-bs-toggle="tab" href="#four" role="tab"
+                            aria-controls="four" aria-selected="false" style="color:rgb(106, 255, 47);">วิทยาลัย</a>
+                    </li>
+                    <li class="nav-item tabmini" role="presentation">
+                        <a class="nav-link" id="five-tab" data-bs-toggle="tab" href="#five" role="tab"
+                            aria-controls="five5" aria-selected="false" style="color:rgb(71, 197, 255);">สำนัก</a>
+                    </li>
+                    <li class="nav-item tabmini" role="presentation">
+                        <a class="nav-link" id="six-tab" data-bs-toggle="tab" href="#six" role="tab"
+                            aria-controls="six" aria-selected="false" style="color: rgb(6, 6, 207);">หน่วยงานวิสาหกิจ</a>
+                    </li>
+                    <li class="nav-item tabmini" role="presentation">
+                        <a class="nav-link" id="seven-tab" data-bs-toggle="tab" href="#seven" role="tab"
+                            aria-controls="seven" aria-selected="false" style="color:  rgb(107, 35, 167);"> หน่วยงานอื่นๆ</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="1-one">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">สำนักงานสภามหาวิทยาลัย</li>
+                          </ul></div>
+                    <div class="tab-pane fade" id="two" role="tabpanel" aria-labelledby="two-tab">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">กองกลาง</li>
+                            <li class="list-group-item">กองกลางกองพัฒนาคุณภาพ</li>
+                            <li class="list-group-item">กองการเจ้าหน้าที่</li>
+                            <li class="list-group-item">กองพัฒนานักศึกษา</li>
+                            <li class="list-group-item">กองคลัง</li>
+                            <li class="list-group-item">กองวิเทศสัมพันธ์</li>
+                            <li class="list-group-item">กองตรวจสอบภายใน</li>
+                            <li class="list-group-item">กองส่งเสริมศิลปวัฒนธรรม</li>
+                            <li class="list-group-item">กองเทคโนโลยีดิจิทัล</li>
+                            <li class="list-group-item">กองกายภาพและสิ่งแวดล้อม</li>
+                            <li class="list-group-item">กองบริหารงานทรัพย์สินและกิจการพิเศษ</li>
+                            <li class="list-group-item">สภาพนักงาน</li>
+                            <li class="list-group-item">กองแผนงาน</li>
+                            <li class="list-group-item">ฝ่ายสื่อสารองค์กร</li>
+                            <li class="list-group-item">ฝ่ายพัฒนาทรัพยากรมนุษย์</li>
+                            <li class="list-group-item">ฝ่ายกฏหมาย</li>
+                          </ul></div>
+                    <div class="tab-pane fade" id="three" role="tabpanel" aria-labelledby="three-tab">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">คณะบริหารธุรกิจ</li>
+                            <li class="list-group-item">คณะผลิตกรรมการเกษตร</li>
+                            <li class="list-group-item">คณะวิทยาศาสตร์</li>
+                            <li class="list-group-item">คณะวิศวกรรมและอุตสาหกรรมเกษตร</li>
+                            <li class="list-group-item">คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ</li>
+                            <li class="list-group-item">คณะพัฒนาการท่องเที่ยว</li>
+                            <li class="list-group-item">คณะศิลปศาสตร์</li>
+                            <li class="list-group-item">คณะเศรษฐศาสตร์</li>
+                            <li class="list-group-item">คณะสถาปัตยกรรมศาสตร์ และการออกแบบสิ่งแวดล้อม</li>
+                            <li class="list-group-item">คณะสัตวศาสตร์และเทคโนโลยี</li>
+                            <li class="list-group-item">คณะสารสนเทศและการสื่อสาร</li>
+                            <li class="list-group-item">มหาวิทยาลัยแม่โจ้-แพร่ เฉลิมพระเกียรติ</li>
+                            <li class="list-group-item">มหาวิทยาลัยแม่โจ้-ชุมพร</li>
+                          </ul></div>
+                    <div class="tab-pane fade" id="four" role="tabpanel" aria-labelledby="four-tab">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">วิทยาลัยนานาชาติ</li>
+                            <li class="list-group-item">วิทยาลัยบริหารศาสตร์</li>
+                            <li class="list-group-item">วิทยาลัยพลังงานทดแทน</li>
+                          </ul></div>
+                    <div class="tab-pane fade" id="five" role="tabpanel" aria-labelledby="five-tab">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">สำนักวิจัยและส่งเสริมวิชาการการเกษตร</li>
+                            <li class="list-group-item">สำนักบริหารและพัฒนาวิชาการ</li>
+                            <li class="list-group-item">สำนักหอสมุด</li>
+                          </ul></div>
+                    <div class="tab-pane fade" id="six" role="tabpanel" aria-labelledby="six-tab">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">ศูนย์วิจัยและพัฒนาเกษตรธรรมชาติ</li>
+                            <li class="list-group-item">สถาบันบริการตรวจสอบคุณภาพและมาตรฐานผลิตภัณฑ์</li>
+                            <li class="list-group-item">ฟาร์มมหาวิทยาลัย</li>
+                            <li class="list-group-item">สถาบันรับรองระบบการผลิตผลิตภัณฑ์การเกษตร</li>
+                            <li class="list-group-item">อุทยานวิทยาศาสตร์เทคโนโลยีเกษตรและอาหาร(สถาบันบ่มเพาะวิสาหกิจ)</li>
+                          </ul></div>
+                    <div class="tab-pane fade" id="seven" role="tabpanel" aria-labelledby="seven-tab">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">หอพักนักศึกษา</li>
+                            <li class="list-group-item">สหกรณ์ออมทรัพย์มหาวิทยาลัยแม่โจ้</li>
+                            <li class="list-group-item">โครงการอนุรักษ์พันธุกรรมพืช อันเนื่องมาจากพระราชดำริฯ</li>
+                            <li class="list-group-item">สโมสรบุคลากรมหาวิทยาลัยแม่โจ้</li>
+                          </ul></div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <!-- <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="accordion accordion-flush" id="accordionFlushExample"
+                            style="background-color: white;">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        สำนักงานสภามหาวิทยาลัย
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <a href="">สำนักงานสภามหาวิทยาลัย</a>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            สำนักงานมหาวิทยาลัย
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="row option_head"><a href="">กองกลาง</a></div>
+                                            <div class="row option_head"><a href="">กองพัฒนาคุณภาพ</a></div>
+                                            <div class="row"><a href="">กองการเจ้าหน้าที่</a></div>
+                                            <div class="row"><a href="">กองพัฒนานักศึกษา</a></div>
+                                            <div class="row"><a href="">กองคลัง</a></div>
+                                            <div class="row"><a href="">กองวิเทศสัมพันธ์</a></div>
+                                            <div class="row"><a href="">กองตรวจสอบภายใน</a></div>
+                                            <div class="row"><a href="">กองส่งเสริมศิลปวัฒนธรรม</a></div>
+                                            <div class="row"><a href="">กองเทคโนโลยีดิจิทัล</a></div>
+                                            <div class="row"><a href="">กองกายภาพและสิ่งแวดล้อม</a></div>
+                                            <div class="row"><a href="">กองบริหารงานทรัพย์สินและกิจการพิเศษ</a></div>
+                                            <div class="row"><a href="">สภาพนักงาน</a></div>
+                                            <div class="row"><a href="">กองแผนงาน</a></div>
+                                            <div class="row"><a href="">ฝ่ายสื่อสารองค์กร</a></div>
+                                            <div class="row"><a href="">ฝ่ายพัฒนาทรัพยากรมนุษย์</a></div>
+                                            <div class="row"><a href="">ฝ่ายกฏหมาย</a></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                aria-expanded="false" aria-controls="flush-collapseThree">
+                                                คณะ
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingThree"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">testttttttttttt</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingFour">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                                aria-expanded="false" aria-controls="flush-collapseFour">
+                                                วิทยาลัย
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">testttttttttttt</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-heading5">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapse5"
+                                                aria-expanded="false" aria-controls="flush-collapse5">
+                                                สำนัก
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapse5" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">testttttttttttt</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-heading6">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapse6"
+                                                aria-expanded="false" aria-controls="flush-collapse6">
+                                                หน่วยงานวิสาหกิจ
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapse6" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-heading6" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">testttttttttttt</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-heading7">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapse7"
+                                                aria-expanded="false" aria-controls="flush-collapse7">
+                                                หน่วยงานอื่นๆ
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapse7" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-heading7" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">testttttttttttt</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <footer>
+        <section class="footer_bg">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-4">
+                        <p class="m-0 foot_text">มหาวิทยาลัยแม่โจ้ 63 หมู่ 4 ต.หนองหาร อ.สันทราย จ.เชียงใหม่ 50290</p>
+
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <!-- <a class="link" href="">Line</a>
+                        <a class="link" href="">Facebook</a>
+                        <a class="link" href="">Yooutube</a>
+                        <a class="link" href="">Instagram</a> -->
+                        <p style="font-size: 30px; color: white;">MAEJO</p>
+                    </div>
+                    <div class="col-md-4 text-end">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <p class="m-0 foot_text">โทรศัพท์ : 0 5387 3000</p>
+                                <p class="m-0 foot_text"> โทรสาร : 0 5387 3015</p>
+                            </div>
+                            <div class="col-md-7">
+                                <a href="">
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-chat-text-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM4.5 5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zm0 2.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zm0 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z" />
+                                    </svg></a>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-facebook icon" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                    </svg></a>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-youtube icon" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.122C.002 7.343.01 6.6.064 5.78l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                                    </svg>
+                                </a>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-instagram icon" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</body>
+
+</html>
