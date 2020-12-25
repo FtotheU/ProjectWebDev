@@ -21,20 +21,177 @@
 <body>
     <form action="" class="needs-validation" novalidate>
         <div class="container">
-            <main>
-                <div class="text-center">
-                    <img class="d-block mx-auto mb-4" src="https://upload.wikimedia.org/wikipedia/th/4/43/%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89_edit.png"
+            <main style="background-color: rgb(59, 59, 230);">
+                <div class="py-5 text-center">
+                    <img class="d-block mx-auto mb-4"
+                        src="https://upload.wikimedia.org/wikipedia/th/4/43/%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89_edit.png"
                         alt="" style="height: 100px; width: 100px;">
                     <h2>คําร้องขอลาพักการศึกษา</h2>
                     <p class="lead">(สําหรับนักศึกษาที่ได้ศึกษามาแล้วไม่น้อยกว่าหนึ่งภาคการศึกษา)</p>
                 </div>
 
+                <div class="container" style="background-color: rgb(101, 101, 255);">
 
+                    <div class="row g-3 p-5">
+                        <div class="input-group mb-3" style="width: 15rem;">
+                            <span class="input-group-text input-group-sm" id="date">วันที่</span>
+                            <input type="date" class="form-control" placeholder="วันที่" aria-label="Date"
+                                aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="row g-3 p-5">
+                        <h4>ข้อมูลนักศึกษา</h4>
+                        <div class="col-md-7">
+                            <div class="row g-3">
+                                <div class="col-md-2">
+                                    <label for="inputState" class="form-label">คำนำหน้าชื่อ</label>
+                                    <select id="inputState" class="form-select">
+                                        <option selected>คำนำหน้าชื่อ</option>
+                                        <option>นาย</option>
+                                        <option>นางสาว</option>
+                                        <option>นาง</option>
+                                    </select>
+                                </div>
+                                <div class="col-md">
+                                    <div class="">
+                                        <label for="fname" class="form-label">ชื่อ</label>
+                                        <input type="text" class="form-control" id="fname" placeholder="ชื่อ">
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="">
+                                        <label for="lname" class="form-label">นามสกุล</label>
+                                        <input type="text" class="form-control" id="lname" placeholder="นามสกุล">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="">
+                                        <label for="number" class="form-label">เบอร์โทร</label>
+                                        <input type="text" class="form-control" id="number" placeholder="เบอร์โทร">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="">
+                                        <label for="major" class="form-label">สาขา</label>
+                                        <input type="text" class="form-control" id="major" placeholder="สาขา">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="">
+                                        <label for="bachelor" class="form-label">คณะ</label>
+                                        <input type="text" class="form-control" id="bachelor" placeholder="คณะ">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="">
+                                        <label for="major" class="form-label">ภาคเรียน</label>
+                                        <input type="text" class="form-control" id="major" placeholder="ภาคเรียน">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="">
+                                        <label for="bachelor" class="form-label">ปีการศึกษา</label>
+                                        <input type="text" class="form-control" id="bachelor" placeholder="ปีการศึกษา">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="mb-3">
+                                <label for="cause" class="form-label">สาเหตุการขอพักการศึกษา</label>
+                                <textarea class="form-control" id="cause" rows="12"></textarea>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="row g-3 p-5">
+                        <h4>ข้อมูลผู้ปกครอง</h4>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label for="inputState" class="form-label">คำนำหน้าชื่อ</label>
+                                <select id="inputState" class="form-select">
+                                    <option selected>คำนำหน้าชื่อ</option>
+                                    <option>นาย</option>
+                                    <option>นางสาว</option>
+                                    <option>นาง</option>
+                                </select>
+                            </div>
+                            <div class="col-md">
+                                <div class="mb-3">
+                                    <label for="fname1" class="form-label">ชื่อ</label>
+                                    <input type="text" class="form-control" id="fname1" placeholder="ชื่อ">
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="mb-3">
+                                    <label for="lname1" class="form-label">นามสกุล</label>
+                                    <input type="text" class="form-control" id="lname1" placeholder="นามสกุล">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="mb-3">
+                                    <label for="number1" class="form-label">เบอร์โทร</label>
+                                    <input type="text" class="form-control" id="number1" placeholder="เบอร์โทร">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="mb-3">
+                                    <label for="houseno" class="form-label">บ้านเลขที่</label>
+                                    <input type="text" class="form-control" id="houseno" placeholder="บ้านเลขที่">
+                                </div>
+                            </div>
+                            <div class="col-md-1">
+                                <div class="mb-3">
+                                    <label for="villageno" class="form-label">หมู่</label>
+                                    <input type="text" class="form-control" id="villageno" placeholder="หมู่">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="mb-3">
+                                    <label for="subdistrict" class="form-label">ตำบล</label>
+                                    <input type="text" class="form-control" id="subdistrict" placeholder="ตำบล">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="mb-3">
+                                    <label for="district" class="form-label">อำเภอ</label>
+                                    <input type="text" class="form-control" id="district" placeholder="อำเภอ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="mb-3">
+                                    <label for="province" class="form-label">จังหวัด</label>
+                                    <input type="text" class="form-control" id="province" placeholder="จังหวัด">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="mb-3">
+                                    <label for="postalcode" class="form-label">รหัสไปรษรีย์</label>
+                                    <input type="text" class="form-control" id="postalcode" placeholder="รหัสไปรษรีย์">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row g-3 p-5">
+                        <h4>ขั้นตอนการเสนอคำร้องขอลาพักการศึกษา</h4>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="spinner-grow  text-success" role="status">
+                                    <span class="visually-hidden">นักศึกษากรอกคำร้องขอลาพักการศึกษา</span>
+                                    <p>นักศึกษากรอกคำร้องขอลาพักการศึกษา</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </main>
         </div>
-
-
     </form>
 
 
